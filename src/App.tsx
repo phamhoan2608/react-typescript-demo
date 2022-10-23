@@ -2,13 +2,30 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
-const reviews = [{
+// Tuple: fix elements, [string, number] => ["Pham Van Hoan", 20]
+// Enum: 
+enum Permission {
+  ADMIN,
+  EDITOR,
+  MODERATOR
+}
+// Any: use some case
+// Union: Switch two types 
+
+
+
+
+const reviews: {name: string; age: number; contact: [number, string]; permission: number}[] = [{
   name: "Phạm Văn Hoàn",
-  age: 23
+  age: 23,
+  contact: [245445545, 'phamhoan879@gmail.com'],
+  permission: Permission.ADMIN
 },
 {
   name: "Nguyễn Hà Anh",
-  age: 22
+  age: 22,
+  contact: [094567890, 'nguyenhaanh091100@gmail.com'],
+  permission: Permission.MODERATOR
 }
 ]
 
