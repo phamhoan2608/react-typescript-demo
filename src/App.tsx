@@ -12,6 +12,15 @@ const reviews = [{
 }
 ]
 
+const user : { firstName: string; lastName: string; age: number; isStudent: boolean, school: (string|number)[], scores: number[]} = {
+  firstName: "Tran",
+  lastName: "Anh Tuan",
+  age: 29,
+  isStudent: true,
+  school: ["Ha Noi University of Industry"],
+  scores: [9, 10, 7]
+}
+
 function App() {
   const [count, setCount] = useState(0)
   function viewInfo(name: string, age?: number) {
